@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculadora</title>
+</head>
+<body>
+  <main class="app">
+    <div class="display">
+      <div class="last-calc"></div>
+      <div class="result">
+        <span><img src="assest/img/Equals.svg" alt="Sinal de igual" /></span>
+        <span id="output"></span>
+      </div>
+    </div>
+    <div class="keyboard">
+      <button onclick="clearEntry()">CE</button>
+      <button onclick="clearAll()">C</button>
+      <button onclick="add('%')"><img src="assest/img/Percent.svg" alt="Sinal de porcentagem"></button>
+      <button class="operations" onclick="selectOperation('/')"><img src="assest/img/Divide.svg" alt="Sinal de divisão"></button>
+      
+      <button onclick="add('7')">7</button>
+      <button onclick="add('8')">8</button>
+      <button onclick="add('9')">9</button>
+      <button class="operations" onclick="selectOperation('*')"><img src="assest/img/Multiply.svg" alt="Sinal de multiplicação"></button>
+
+      <button onclick="add('4')">4</button>
+      <button onclick="add('5')">5</button>
+      <button onclick="add('6')">6</button>
+      <button class="operations" onclick="selectOperation('-')"><img src="assest/img/Minus.svg" alt="Sinal de subtração"></button>
+
+      <button onclick="add('1')">1</button>
+      <button onclick="add('2')">2</button>
+      <button onclick="add('3')">3</button>
+      <button class="operations" onclick="selectOperation('+')"><img src="assest/img/Plus.svg" alt="Sinal de adição"></button>
+        
+      <button onclick="toggleSign()">+/-</button>
+      <button onclick="add('0')">0</button>
+      <button onclick="add('.')"><img src="assest/img/Comma.svg" alt="Virgula"></button>
+      <button class="operations" onclick="calculate()"><img src="assest/img/Result.svg" alt="Resultado"></button>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
